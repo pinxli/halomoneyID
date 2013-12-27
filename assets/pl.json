@@ -1,0 +1,117 @@
+{
+    "compargoGlobalApiResponse": {
+        "locale": "hk",
+        "lang": "en",
+        "version": "1.0",
+        "searchResults": {
+            "vertical": "personal-loan",
+            "rowCount": "1",
+            "searchResultItems": [
+                {
+                    "productId": "1",
+                    "ranking": "21",
+                    "productName": "Tax Installment Loan",
+                    "bankName": "China CITIC Bank International",
+                    "loanType": "Tax Loan",
+					"hasPersonalInstalmentLoan": "false", 
+					"hasDebtConsolidation": "false", 
+					"hasPersonalCreditLine": "false", 
+					"hasTaxLoan": "true",
+                    "logo": "http://www.moneyhero.com.hk/images/citc-tax-loan.jpg",
+                    "logoAltText": "citc tax loan",
+                    "link": "http://www.citc.com/apply",
+                    "onlineApplicationReward": "true",
+                    "minLoanAmount": "10000",
+                    "maxLoanAmount": "300000",
+                    "minLoanTenure": "36",
+                    "maxLoanTenure": "120", 
+                    "openToNonPermanentResidents": "TRUE",
+                    "lowestMonthlyFlatRate": "0.5",
+	        		"lowestApr": "2.4",	
+        			"aprBasis": "Example: using 10,000 borrowed over 3 years",
+                    "minMonthlyPaymentHKD": "100",
+                    "minMonthlyPaymentPercent": "2.0",
+                    "annualFeePercent": "2.5",
+                    "minAnnualFeeHKD": "100",
+                    "maxAnnualFeeHKD": "200",
+                    "annualHandlingFee": "2.2",
+                    "minHandlingFee": "17",
+                    "earlySettlementFeeType": "1",
+                    "earlySettlementFeePercentOfTotal": "2.3",
+                    "earlySettlementFeePercentOutstanding": "2.3",
+                    "earlySettlementFeeFlatAmount": "350",
+                    "minEarlySettlementFee": "300",
+                    "latePaymentPenaltyType": "1", 
+                    "latePaymentPenaltyPercent": "5.1",
+                    "latePaymentPenaltyFlatAmount": "120",
+                    "minLatePaymentPenalty": "5.1",
+                    "hasPromotion": "true",
+                    "promotionText": "Special low interest rate for the first year",
+                    "keyBenefits": [
+                        {
+                            "keyBenefit1": "Attractive interest rate from 8.8% p.a"
+                        },
+                        {
+                            "keyBenefit2": "No handling fees"
+                        },
+                        {
+                            "keyBenefit3": "No early payment penalty"
+                        }
+                    ]
+                },
+                {
+                    "productId": "2",
+                    "ranking": "11",
+                    "productName": "Personal Installment Loan",
+                    "bankName": "Bank of East Asia",
+                    "loanType": "Personal Installment Loan",
+					"hasPersonalInstalmentLoan": "true", 
+					"hasDebtConsolidation": "false", 
+					"hasPersonalCreditLine": "false", 
+					"hasTaxLoan": "false",
+                    "productImage": "http://www.moneyhero.com.hk/images/citc.jpg",
+                    "productImageAltText": "citc tax loan",
+                    "link": "http://www.citc.com/apply",
+                    "onlineApplicationReward": "true",
+                    "minLoanAmount": "50000",
+                    "maxLoanAmount": "200000",
+                    "minLoanTenure": "16",
+                    "maxLoanTenure": "180", 
+                    "openToNonPermanentResidents": "false",
+                    "lowestMonthlyFlatRate": "1.5",
+	        		"lowestApr": "3.4",	
+        			"aprBasis": "Example: using 20,000 borrowed over 1 years",
+                    "minMonthlyPaymentHKD": "200",
+                    "minMonthlyPaymentPercent": "2.5",
+                    "annualFeePercent": "1.5",
+                    "minAnnualFeeHKD": "200",
+                    "maxAnnualFeeHKD": "100",
+                    "annualHandlingFee": "4.2",
+                    "minHandlingFee": "7",
+                    "earlySettlementFeeType": "1",
+                    "earlySettlementFeePercentOfTotal": "4.3",
+                    "earlySettlementFeePercentOutstanding": "1.3",
+                    "earlySettlementFeeFlatAmount": "250",
+                    "minEarlySettlementFee": "200",
+                    "latePaymentPenaltyType": "1", 
+                    "latePaymentPenaltyPercent": "6.1",
+                    "latePaymentPenaltyFlatAmount": "320",
+                    "minLatePaymentPenalty": "4.1",
+                    "hasPromotion": "false",
+                    "promotionText": "Special low interest rate for the first year",
+                    "keyBenefits": [
+                        {
+                            "keyBenefit1": "Interest rate starts from 8.8% p.a"
+                        },
+                        {
+                            "keyBenefit2": "1.2 HKD handling fees"
+                        },
+                        {
+                            "keyBenefit3": "0% payment penalty"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

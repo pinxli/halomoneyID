@@ -1,0 +1,109 @@
+                    <div class="row-fluid result">
+                        <div>
+                            <div class="row-fluid results-div">
+                                <div class="span5">
+                                    <div class="row-fluid clearfix">
+                                        <div class="span5 resultsCellInner found_company">
+                                            <span class="my-count ng-binding"> {{productId}}</span>
+                                            <div class="logoAndIcons">
+                                                <img border="0" class="img_product" alt="{{logoAltText}}" data-legacy-src="assets/img/creditcards/ocbc-gold-visa.jpg" src="{{logo}}">
+                                                
+                                                <div>
+                                                    <abbr class="four_icons provider {{cardProvider}}" title="Provider: {{cardProvider}}"></abbr>
+                                                    <abbr class="four_icons provider {{currency}}" title="Currency: {{currency}}"></abbr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="span7 resultsCellInner found_feature">
+                                            <div class="clearfix">
+                                                <h2 class="ng-binding">{{bankName}} {{productName}}</h2>
+                                            </div>
+                                            <ul class="unstyled">
+                                                {{#keyBenefits}}
+													{{#keyBenefit1}}
+													<li><span class="chk_row_icon">{{keyBenefit1}}</span></li>
+													{{/keyBenefit1}}
+													{{#keyBenefit2}}
+													<li><span class="chk_row_icon">{{keyBenefit2}}</span></li>
+													{{/keyBenefit2}}
+													{{#keyBenefit3}}
+													<li><span class="chk_row_icon">{{keyBenefit3}}</span></li>
+													{{/keyBenefit3}}
+                                                {{/keyBenefits}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								
+                                <div class="span7 other_dtl_cc">
+                                    <div class="row-fluid header_mob clearfix visible-phone">
+                                        <div data-legacy-class="{active: orderBy == 'rewards'}" class="span5 section_wid found_search_box found_balance target1 text-center">
+                                            <span style="white-space:nowrap;" data-legacy-class="{active: orderBy == 'rewards'}" data-legacy-click="changeOrder('rewards')" class="target">
+                                                <?php echo lang('Rewards')?>&nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.rewards &amp;&amp; orderBy == 'rewards', 'icon-caret-down': refine.order.rewards &amp;&amp; orderBy == 'rewards'}"></span>
+                                            </span>
+                                        </div>
+                                        
+                                        <div data-legacy-class="{active: orderBy == 'annual'}" class="span3 row_margin section_wid found_search_box target1">
+                                            <span data-legacy-class="{active: orderBy == 'annual'}" data-legacy-click="changeOrder('annual')" class="target"><?php echo lang('Annual')?> <span style="white-space:nowrap;">Fee&nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.annual &amp;&amp; orderBy == 'annual', 'icon-caret-down': refine.order.annual &amp;&amp; orderBy == 'annual'}"></span></span></span>
+                                        </div>
+                                        <div data-legacy-class="{active: orderBy == 'interest'}" class="span3 row_margin section_wid found_search_box found_last two_lines target1">
+                                            <span data-legacy-class="{active: orderBy == 'interest'}" data-legacy-click="changeOrder('interest')" class="target">Interest <span style="white-space:nowrap;">Rate&nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.interest &amp;&amp; orderBy == 'interest', 'icon-caret-down': refine.order.interest &amp;&amp; orderBy == 'interest'}"></span></span></span>
+                                        </div>
+                                    </div>
+									
+									
+									
+                                    <div class="row-fluid clearfix">
+                                        <div id="pop1" role="dialog" tabindex="-1" class="span5 text-center text_rewards dtl fix_me">
+                                            {{#rewards.cashBackRewards}}
+											    {{#Retail}}
+												<li><span class="icon-money"></span><span class="txt">{{Retail}}% <?php echo lang('Cashback on all retail expenses')?></span></li>
+												{{/Retail}}
+												
+												{{#Petrol}}
+												<li><span class="icon-money"></span><span class="txt">{{Petrol}}</span></li>
+												{{/Petrol}}
+												
+												{{#Special}}
+												<li><span class="icon-money"></span><span class="txt">{{Special}}</span></li>
+												{{/Special}}
+												
+											{{/rewards.cashBackRewards}}	
+																						
+                                            {{#rewards.milesRewards}}
+											    {{#EnrichMiles}}
+												<li><span class="icon-plane"></span><span class="txt">{{EnrichMiles}} HK$ <?php echo lang('Per Mile')?></span></li>
+												{{/EnrichMiles}}
+											{{/rewards.milesRewards}}	
+																					
+                                            {{#rewards.pointRewards}}
+												{{#pointRewardsRetail}}
+												<li><span class="icon-barcode"></span><span class="txt">{{pointRewardsRetail}}</span></li>
+												{{/pointRewardsRetail}}
+											{{/rewards.pointRewards}}
+                                        </div>
+										
+                                        <div class="span2 text-center dtl">
+                                            <em ng-hide="!m.annual_fee || m.annual_fee == null || m.annual_fee == ''  || m.annual_fee == 'n.a. ' || m.annual_fee == 'n/a' || m.annual_fee == 'N/A'" class="ng-binding">{{showCurrency . 'currency'}} {{annualFee}}</em>
+											<p class="py" ng-hide="!m.annual_fee || m.annual_fee == null || m.annual_fee == ''  || m.annual_fee == 'n.a. ' || m.annual_fee == 'n/a' || m.annual_fee == 'N/A'">
+												<?php echo lang('per year')?></p>
+                                            <em ng-show="!m.annual_fee || m.annual_fee == null || m.annual_fee == ''  || m.annual_fee == 'n.a. ' || m.annual_fee == 'n/a' || m.annual_fee == 'N/A'" style="display: none;">Free</em>
+                                        </div>
+                                        <div class="span2 text-center dtl">
+                                            <em class="ng-binding">{{interestRate}}%</em>
+											<p class="py"><?php echo lang('per year')?></p>
+                                        </div>
+                                        <div class="span3 text-center dtl_goto">
+                                            <a href="/credit-card/overlay/{{bankName}}"
+                                            onclick="_gaq.push(['_trackPageview', '/credit-card/overlay/{{bankName}}']);" rel="nofollow" data-legacy-click="selectResult('application');$event.preventDefault();" style="width:90px;" class="btn-compare-now goto_site" data-id="{{productId}}" {{ (el) -> el.data('row-info', this) }}><?php echo lang('Apply Now')?></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        
+                </div>

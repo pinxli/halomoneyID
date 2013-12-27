@@ -1,0 +1,12 @@
+<div class="results-more">
+{{#more}}
+	{{>cc-row-tpl}}
+{{/more}}	
+{{^more}}
+	<p class="loading-next"><?php echo lang('Loading')?> ...</p>	
+{{/more}}
+</div>
+<script type="text/javascript">
+	$('.load').remove();
+	$('#results').append('<a class="load"><?php echo lang('Show more CreditCard deals')?></a>');
+</script>

@@ -1,0 +1,161 @@
+#loan-amount{
+  width: 400px !important;
+  height: 0px !important;
+  margin-top: 25px !important;
+  padding-left: 35px;
+  border: none !important;
+  /*display: none !important;*/
+}
+
+#loan-amount:disabled{
+  border: none !important;
+  -moz-box-shadow:    none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow:         none !important;
+}
+
+#loan-length{
+  width: 250px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+.slider{
+  margin-top: 10px !important;
+}
+
+.slider-handle{
+  color: #4cb451 !important;
+  background: #4cb451 !important
+}
+
+.margin-left-10{
+  margin-left: 10px !important
+}
+
+.combo{
+  width: 370px !important;
+  height: auto !important
+}
+
+.frm_label{
+  text-align: left !important;
+  padding-left: 0px !important;
+  /*width: 250px !important;*/
+}
+
+.slider-selection{
+  /*border-bottom: 1px solid #4cb451*/
+}
+
+.frm_label_residence{
+  width: auto !important
+}
+
+.controls-amount{
+  position: relative;
+}
+
+.controls-resident{
+  margin-left: 0px !important;
+}
+
+span.currency-label{
+  position: absolute;
+  left: 5px !important;
+  top: 71px !important;
+}
+
+.tenureSlider{
+  width: 450px !important
+}
+
+.reset-filters-div{
+  float: right !important
+}
+
+.reset-filters-div a{
+  text-align: right !important;
+}
+
+.text_lowestmonelyflatrate{
+  width: 205px !important;
+}
+
+.lowestMonthlyFlatRateSort{
+  width: 240px !important;
+}
+
+.results_main_tab{
+    position: relative;
+}
+
+.sort-lowestApr{
+    width: 85px;
+    left: 640px;
+}
+
+.sort-annualFeePercent{
+    width: 160px;
+    left: 730px;
+}
+
+.sort-lowestMonthlyFlatRate{
+    width: 200px;
+    left: 437px;
+}
+
+.sort-bestSeller{
+  display: none !important;
+}
+
+.right_colmn_section{
+  margin-left: 0px !important
+}
+
+.other_dtl_cc{
+  margin-left: 18px !important
+}
+
+.apr{
+  margin-left: 0px !important;
+  width: 80px !important
+}
+
+.aprSort{
+  margin-left: 0px !important
+}
+
+.fees{
+  width: 140px !important;
+  font-size: 11px !important
+}
+
+.feesSort{
+  margin-left: 32px !important;
+}
+
+/*for tabs*/
+.tab_icon{
+    width: 38px;
+    height: 37px;
+    background: url(../img/pl-tab-icons.png) 0 0 repeat-y;
+}
+
+#tab_menu .tab_v2 li #icon_pl_credit_line{background-position: -38px 0;}
+#tab_menu .tab_v2 li #icon_pl_installment_loans{background-position: -38px -37px;}
+#tab_menu .tab_v2 li #icon_pl_tax_loan{background-position: -38px -74px;}
+#tab_menu .tab_v2 li #icon_pl_debt_consolidation{background-position: -38px -111px;}
+#tab_menu .tab_v2 li #icon-cc-all{background-position: -38px -148px;}
+
+#tab_menu .tab_v2 li:hover #icon_pl_credit_line{background-position: 0 0;}
+#tab_menu .tab_v2 li:hover #icon_pl_installment_loans{background-position: 0px -37px;}
+#tab_menu .tab_v2 li:hover #icon_pl_tax_loan{background-position: 0px -74px;}
+#tab_menu .tab_v2 li:hover #icon_pl_debt_consolidation{background-position: 0px -111px;}
+#tab_menu .tab_v2 li:hover #icon-cc-all{background-position: 0px -148px;}
+
+#tab_menu .tab_v2 li.active #icon_pl_credit_line{background-position: 0 0;}
+#tab_menu .tab_v2 li.active #icon_pl_installment_loans{background-position: 0px -37px;}
+#tab_menu .tab_v2 li.active #icon_pl_tax_loan{background-position: 0px -74px;}
+#tab_menu .tab_v2 li.active #icon_pl_debt_consolidation{background-position: 0px -111px;}
+#tab_menu .tab_v2 li.active #icon-cc-all{background-position: 0px -148px;}

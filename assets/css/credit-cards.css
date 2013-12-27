@@ -1,0 +1,1009 @@
+/*#main .result, #main .found_company, #main .found_product, #main .found_annual_fee, #main .found_balance_trans, #main .found_room, #main .found_feature, #main .found_interest, #main .found_field {
+    min-height: 140px !important;
+    height: 140px !important;
+}
+
+.found_product h1 {
+    max-height: 80px;
+    overflow: hidden;
+}
+
+#main .found_feature .resultsCellInner {
+    vertical-align: middle;
+}
+
+#main .found_feature ul {
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.found_company {
+    border-right: none !important;
+}*/
+
+
+/*CREDIT CARDS*/ 
+
+    /*.upper_navigation{
+        background: url("../img/bg4.png") no-repeat scroll center top 17px transparent;
+        padding: 0 0 3px;
+    }*/   
+
+.hero_unit{
+    background-color: white;
+    background-image: url("../img/bg4.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top -77px;
+}                    
+#credit_card{
+    position: relative;
+}
+#credit_card{
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+#credit_card h1{
+    font-size: 25px;
+    font-weight: normal;
+}
+#credit_card img{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+#credit_card p{
+    margin: 2% 33% 2% 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#credit_card a {
+    bottom: -8%;
+    left: 29%;
+    position: absolute;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+#try_it{
+    font-size: 35px !important;
+    font-weight: normal;        
+}                                                                                       
+
+#try_it{
+    position: absolute;  
+    padding: 0;
+    background-image: url(../img/arrow_down.png);
+    background-repeat: no-repeat;
+    font-size: 35px !important;
+    font-weight: normal;
+    height: 63px;
+    bottom: -30%; 
+    left: 0;
+}
+
+/* Filter */
+
+.step3_salary_filter {
+    /*width: 75% !important;*/
+}
+
+/*Advance Options*/
+#accordion_adv_options .accordion-group {
+    background-color: rgb(239,239,239);
+    border-radius: 0 0 15px 15px;
+}
+
+#accordion_adv_options .radio:first-child, .controls > .checkbox:first-child {
+    padding-top: 10px;
+}
+
+#accordion_adv_options .form-horizontal .controls {
+    margin-left: 0px!important;
+}
+#accordion_adv_options .step3_types_filter{
+    
+}
+
+#accordion_adv_options .step3_foreigner_filter {
+
+}
+
+#accordion_adv_options .step3_types_filter label, .step3_foreigner_filter label, .step3_islamic_filter label{
+    float: left;
+    margin-right: 5px;
+}
+
+#accordion_adv_options .frm_label{
+    width: 25%; float: left; padding:10px 25px 0 0; text-align: right; font-size: 12px; font-weight: bold;
+    white-space: nowrap;
+}
+
+/*#accordion_adv_options .step3_providers_filter, #accordion_adv_options .step3_banks_filter, #accordion_adv_options .step3_benefits_filter{
+    padding: 0 0 0 30px;
+}*/
+
+
+/*CREDIT CARD RESULTS*/
+
+#credit_results_grp2{
+    padding: 9px 20px 20px 20px;
+    background: url(../img/box_bg3.png);
+}
+
+#tab_menu .nav-tabs li.active a {
+    background-color: white;
+}
+
+#tab_menu .nav-tabs li a, #tab_menu .nav-tabs li a:hover, #tab_menu .nav-tabs li.active a {
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 15px 19px 5px;
+    margin: 0 3px;
+}
+
+#credit_results_grp3{
+    padding: 0 15px;
+}
+#tab_menu .nav-tabs li.active a {
+    color: #000000;
+}
+#tab_menu .nav-tabs li a:hover {
+    color: #ffffff;
+}
+
+.ribbon{
+    margin: 10px;
+}
+
+form fieldset, form label{
+    padding: 10px 3px 7px 3px;
+}
+
+div.table_row{
+    font-size: 12px;
+}
+
+.tab_info_content .nav-tabs li.active{         
+    color: black;
+}
+
+/*OVERRIDES*/
+
+#accordion_adv_options .collapse {
+    overflow: inherit !important;
+}
+
+.refine_result{
+    border-radius:0px!important;
+    border: none !important;
+}
+
+ul.dropdown-menu li{
+    padding: 3px 0px 3px 10px;
+}
+
+/* RESULTS */
+
+.result .found_company .img_product {
+    max-width: 120px;
+    min-width: 120px;
+}
+
+.result .found_company{
+    border:0;
+}
+.result .four_icons {
+    display: inline-block;
+    cursor: help;
+    padding: 0;
+    width: 25px;
+    height: 33px;
+    display: none;
+    float: left;
+}
+.result .four_icons.UnionPay{
+    background: url(../img/unionpay.png) no-repeat;
+    display: block;
+}
+.result .four_icons.provider.Visa {
+    background: url(../img/visa.png) no-repeat;
+    display: block;
+}
+.result .four_icons.provider.American.Express {
+    background-image: url(../img/amex.png);
+    display: block;
+}
+.result .four_icons.provider.MasterCard {
+    background-image: url(../img/mastercard.png);
+    display: block;
+}
+.result .four_icons.provider.JCB {
+    background-image: url(../img/jcb.png);
+    display: block;
+}
+
+.result .four_icons.provider.Octopus {
+    background-image: url(../img/octopus.png);
+    display: block;
+}
+
+.result .four_icons.provider.Dual {
+    background-image: url(../img/yen.png);
+    display: block;
+}
+
+.result .four_icons.provider.RMB {
+    background-image: url(../img/rmb.png);
+    display: block;
+}
+
+.result .four_icons.provider {
+    position: relative;
+    top: 8px;
+    height: 32px;
+    display: inline-block;
+    width: 32px;
+    padding: 0;
+    background-repeat: no-repeat;
+    border-bottom: none;
+    background-size: 100%;
+    background-position: bottom left;
+}                       
+
+.result .benefits_single {
+    margin-bottom: 5px;
+}
+.result .benefits_single .benefits_label {
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+.result .benefits_single .benefits_content {
+    font-size: 18px;
+    white-space: nowrap;
+}
+.result .benefits_single .benefits_content.isreward {
+    font-weight: bold;
+}
+
+
+.got_q {
+    font-size: 12px;
+    margin:5px 20px 3px 0px;
+}
+
+#loginModal .modal-we-value{
+        font-size: 12px;
+    line-height: 1.1;
+    padding-left: 120px;
+    text-align: justify;
+    width: 300px;
+}
+
+#loginModal .btn-compare-now {
+    margin-top:1%;margin-left:100px;
+}
+
+#loginModal .controls input[type=text], #loginModal .controls input[type=email]{
+    height: 38px;
+}
+
+#___signin_0{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-style: none;
+    display: inline-block;
+    float: none;
+    font-size: 1px;
+    height: 36px;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-indent: 0;
+    vertical-align: baseline;
+    width: 112px;
+}
+
+.is_loggedin{
+    position: absolute; 
+    left: 0px; 
+    top: -5px; 
+    width: 493px;
+    background:none;   
+}
+
+.is_loggedin span{
+    border-bottom: 1px solid #555555;
+    font-size: 22px;
+    font-style: italic;
+    margin-left: 11px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.not_me{
+    height: 27px; padding-top: 16px; margin: 6px 20px 0px 20px;
+}
+
+.colhighlighted.ccbal{
+    left: 57.3%;
+    top: 0;
+    width: 9%;
+    display: block;
+}
+.colhighlighted.ccrew{
+    display: block;
+    left: 41.7%;
+    top: 0;
+    width: 15.077%;
+}
+.colhighlighted.ccanu{
+    display: block;
+    left: 66.7%;
+    top: 0;
+    width: 9.4%;
+}
+.colhighlighted.ccint{
+    display: block;
+    left: 76.7%;
+    top: 0;
+    width: 8.6%;
+}
+
+
+.we_compare{
+    font-size: 22px;
+    padding: 0 10px;
+    width: 237px;
+}
+.p_compare{
+    background: #fff url(../img/box_services_top_bg2.png) no-repeat top 0 center;; 
+    box-shadow: -1px 3px 8px #999999;
+    height: 148px;
+    margin-top: 12px;
+    padding: 12px 0 0;
+    text-align: center;
+}
+.log_partners{
+    position: relative; 
+    background: #fff url(../img/box_services_top_bg2.png) no-repeat top 0 center;
+    background-color: #FFFFFF;
+    box-shadow: -1px 3px 8px #999999;
+}
+.guarantees{
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.p_compare ul{
+    margin-top: 15px;
+    list-style: none;
+}
+.p_compare ul li{
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: left;
+    background: url(../img/chevron_right.png) no-repeat left center;
+    padding: 0 0 0 13px;
+    
+}
+
+#signup_for_free{
+    color: #000000;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#tbl_testimonials{
+    width: 100%;
+}
+#tbl_testimonials .my_say{
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+    vertical-align: middle;
+    width: 300px;
+    margin-top: 20px;
+}
+#tbl_testimonials div.span2, #tbl_testimonials div.span4, #tbl_testimonials div.span6{
+    min-height: 117px!important;
+}
+
+.you-r-logged{
+    border-bottom: 1px solid #E6E6E6;
+    color: #666666;
+    font-size: 17px;
+    padding: 20px 20px 20px 10px;
+    width: 94%;
+}
+
+.tsearch{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    color: #666666;
+    font-size: 31px;
+    font-weight: bold;
+    height: 38px;
+    letter-spacing: 8px;
+    padding: 15px 0 0 15px;
+    width: 228px;
+    text-align: center;
+}
+
+/* Large desktop */
+    @media (min-width: 1200px) {
+    }
+
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) {
+    }
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+        #credit_reg {
+            height: auto;
+            margin-left: 0;
+            margin-top: 20px;
+            width: 100%;
+        }
+		#credit_reg .main_content{
+			width: auto;
+		}
+        
+		#credit_reg .modal-right-content {
+			font-size: 12px;
+		}
+        
+        #credit_reg .modal-main-content {
+            
+        }
+		    
+        #credit_reg img{
+			height: 30px;
+		}
+		#credit_reg .modal-right-content img.mouse {
+			height: 100px;
+			left: 0;
+			top: 75px;
+		}
+		#credit_reg .modal-left-content {
+			margin: 144px auto;
+			width: 94%;
+		}
+		#control_name div{
+			width: 96%;
+		}
+		#control_name input, #credit_reg .controls input {
+			width: 92%;
+		}
+		.div_grp .controls, #control_name {
+			margin-left: 0px !important;
+		}
+		.div_grp .control-label {
+			width: 90% !important;
+		}
+		.div_grp .control-label, .div_grp .controls, #control_name div{
+			margin-left: 13px !important;
+		}
+		.div_grp .controls input {
+			margin-top: 0px !important;
+			margin-bottom: 0px !important;
+		}
+		.we_value{
+			padding-left: 13px !important;
+			font-size: 12px;
+		}
+		#credit_reg .btn_submit{
+			margin-left: 13px;
+		
+		}
+		#credit_reg .btn_submit a{
+			font-size: 14px;
+		}
+		#chkAgree {
+			margin-left: 13px !important;
+			font-size: 12px !important;
+		}
+		.got_q {
+			font-size: 12px;
+		}
+
+        .accordion-inner .interested_in{
+            border-top: none !important;
+        }
+        
+        .interested_in{
+            padding: 0px!important;
+        }
+        .step3_types_filter, .step3_providers_filter, .step3_banks_filter, .step3_foreigner_filter, .step3_salary_filter, .step3_islamic_filter{
+            margin: 0px;
+        }
+        
+        #accordion_adv_options .frm_label, #accordion_adv_options .controls{
+            width: 100%;
+        }
+        #accordion_adv_options .frm_label{
+            text-align: left!important;
+        }
+        #accordion_adv_options .dropdown-toggle, .dropdown-menu, .combo{
+            width: 100% !important;
+        }
+        #tab_menu{
+            height: auto;
+            background-color: #48BC4C;
+        }
+        #tab_menu .tab_v2{
+            margin:0 auto;
+        }
+        #tab_menu .tab_v2 li {
+            margin: 1%;
+            width: 31%;
+        }
+        #tab_menu .tab_v2 li div{
+            border-radius: 4px;
+        }
+    
+        .other_dtl .dtl, .header_mob .span3{
+            float: left;
+            margin: 1%;
+            width: 23%;
+        }
+        .other_dtl .dtl{
+            background-color: #F0F0F0;
+            max-height: 91px;
+            min-height: 91px;
+            overflow: hidden;
+        }
+        .other_dtl .dtl_goto{
+            float: left;
+        }
+        .other_dtl .dtl_goto .btn-compare-now{
+            width: 100%;
+            margin: 10px 0 0 0;
+            padding: 11px 0;
+        }
+        .result{
+            padding: 3px!important;
+        }
+        .result:hover {
+            border: 0!important;
+            border-shadow: none !important;
+        }
+        .found_company{
+            float: left!important;
+            width: 40%!important;
+            margin: 0px;
+            padding: 0;
+        }
+        .found_feature{
+            float: right!important;
+            width: 58%!important;
+            padding: 0;
+        }
+        .found_feature ul li{
+            text-align: justify;
+        }
+        .found_feature ul li span{
+            background: url(../img/right_icon_mini.png) no-repeat top 3px left;
+            font-size: 11px;
+            padding-left: 16px;
+        }
+        
+        .my-count{
+            display: none;
+        }
+        .logoAndIcons{
+            margin: 0!important;
+        }
+        
+        #results .sortby {
+            margin-top: 5px;
+        }
+        
+        .found_result_head .hdr1 {
+            width: 43%;
+        }
+        .found_result_head .hdr3, .found_result_head .hdr2 {
+            width: 20%;
+        }
+        
+        .found_result_head .hdr1, .found_result_head .hdr2, .found_result_head .hdr3{
+            float: left;
+            margin: 1%;
+        }
+        .found_balance {
+            padding: 0;
+        }
+        
+        .modal-main-content {
+            height: auto;
+        }
+        .modal-left-content, .modal-right-content{
+            float: left;
+        }
+        
+        .modal.fade.ng-scope.in{
+            /*width: 100% !important;
+            left: 0!important;*/
+            width: 100%;
+            left: 0;
+        }
+        .we_compare{
+            float: none!important;
+            width: 100%!important;
+        }
+        .p_compare{
+            border-radius: 7px 0 0 7px;
+            font-size: 12px !important;
+            line-height: 14px !important;
+            padding: 0!important;
+        }
+        .p_compare span{
+            line-height: 20px;
+        }
+        .modal-left-inner{
+            position: absolute;
+            top: 133px!important;
+            left:40!important;
+            width: 90%!important;
+            padding: 0 0 10px 0;
+        }
+        
+        #loginModal .control-label {
+            text-align: left;
+            float: none!important;
+            width: 100%!important;
+            padding: 0 0 0 5px;
+        }
+        
+        #loginModal .controls{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        #loginModal .controls #firstName{
+            margin-left: -15px!important;
+        }
+        #loginModal .controls #firstName, #loginModal .controls #lastName{
+            width: 48%!important;
+        }
+        
+        #loginModal .controls #email{
+            width: 103% !important;
+            margin-left: -15px!important;
+        }
+        
+        #loginModal .modal-we-value{
+            font-size: 12px;
+            line-height: 1.1;
+            padding: 10px 23px 10px 5px;
+            text-align: justify;
+        }
+        #loginModal .btn-compare-now {
+            margin-top:1%;margin-left:-15px;
+            width: 87%;
+            font-size: 16px;
+        }
+        
+        #loginModal .controls input[type="checkbox"] {
+            margin: 2px 6px 0px -15px !important;
+        }
+        #fbbut {
+            font-size: 11px;
+            height: 32px;
+            margin: 0 3% 0 -15px !important;
+            text-align: left;
+            width: 48%;
+        }
+        #signup_for_free {
+            font-size: 21px;
+        }
+        
+        .result .benefits_single .benefits_label, .modal .benefits_single .benefits_label {
+            font-size: 12px;
+        }
+        .result .benefits_single .benefits_content, .modal .benefits_single .benefits_content {        
+            font-size: 10px;
+            line-height: 12px;
+            white-space: normal;
+        }
+        .result .dtl em, .modal .ng-binding{
+            font-size: 12px;
+        }
+        .text_rewards .dtl{
+            font-size: 12px;
+        }
+        
+        .text_rewards.dtl .accordion{
+            max-height: 60px;
+            overflow: hidden;
+        }
+        .result .expand_rewards {    
+            background: none repeat scroll 0 0 #149034;
+            bottom: 62px;
+            color: #FFFFFF;
+            display: block;
+            font-size: 12px;
+            left: 3px;
+            position: absolute;
+            width: 22.7%;
+            z-index: 55555;
+        }
+        
+        .modal .accordion-toggle .ng-binding{
+            text-decoration: underline;
+        }
+        .modal .accordion-body.collapse{
+            height: auto!important;
+        }
+        .modal .text_rewards.dtl .accordion{
+            max-height: 1000px;
+            overflow: visible;
+        }
+        .modal .result .expand_rewards {    
+            background: none repeat scroll 0 0 #149034;
+            color: #FFFFFF;
+            display: block;
+            font-size: 12px;
+            left: 3px;
+            position: absolute;
+            width: 22.7%;
+            z-index: 55555;
+        }
+        .modal .text_rewards.dtl .benefits_label{
+            font-size: 12px;
+        }
+        
+        #show_reward{
+            /*width: 100px !important;*/
+            margin-top: 20%;
+            padding-top: 0!important;
+            width: 50%;
+            height: auto;
+        }
+        .modal .expand_rewards{
+            display: none;
+        }
+        .other_dtl .span2 {
+            padding-top: 23px;
+        }
+        
+        .is_loggedin{
+            position: absolute; 
+            left: 0px; 
+            top: 14px; 
+            width: 100%;
+            background:none;   
+        }
+        #loginModal .is_loggedin .btn-compare-now{
+            margin: 3% !important;
+            padding: 12px 0;
+            width: 94%;
+        }
+        
+        #loginModal .is_loggedin .not_me{
+            height: 27px;
+            margin: 3% 3% 0;
+            padding: 12px 0;
+            width: 94%;
+        }
+        #loginModal .is_loggedin .modal-left-inner{
+            top: 104px !important;
+        }
+        #loginModal .is_loggedin .modal-left-inner .partners {
+            font-size: 16px;
+        }
+    }
+
+    .space1{
+        display: block;
+    }
+
+    .found_company{
+        position: relative
+    }
+
+    .my-count{
+        left: 0;
+        top: 5px;
+        font-size: 20px;
+    }
+
+    .logoAndIcons{
+        margin-left: 40px !important
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+    #filter{
+        width: 390px !important
+    }
+
+    .tab_v2 {
+        display: block;
+    }
+
+    .tab_v2 {
+        margin: auto !important;
+        width: auto !important;
+    }
+
+    .loading-image{
+        margin: 10px auto !important;
+        float: none;
+        margin-left: 45% !important
+    }
+
+    .progress {
+    height: 40px;
+    font-size: 30px;
+    }
+
+    .bar {
+        font-size: 30px;
+        line-height: 40px;
+        color: #333 !important;
+        font-weight: bold !important;
+        width: 100% !important
+    }
+
+    .aligned{
+        margin-top: -5px !important
+    }
+
+    .aligned1{
+        margin-top: 2px !important
+    }
+
+    .dropdown-menu > li > a{
+        width: auto !important;
+        margin-right: 10px !important
+    }
+
+    .dropdown-menu > li > a:hover {
+        /*background: #aaaaaa !important;*/
+    }
+
+    .modal-main-content{
+        background: #2D762F
+    }
+	
+	#pop1 [class^="icon-"],#pop1 [class*=" icon-"] {
+		color:#aaaaaa;
+    }
+	#pop1 li{
+		list-style:none;
+    }	
+	
+	#pop1 .txt{
+		padding-left: 8px;
+	}
+
+/*FOR SORT HIGHLIGHT*/
+#highlight-div{
+    background: #f0faf2;
+    z-index: -1 !important;
+    position: absolute;
+    bottom: 5px !important;
+    top: -5px !important;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+    display: none;
+}
+
+#affixbar{
+    z-index: 9999 !important;
+}
+
+.sort-rewards{
+    width: 250px;
+    left: 440px;
+}
+
+.results_main_tab{
+    position: relative;
+}
+
+.sort-annualFee{
+    width: 93px;
+    left: 695px;
+}
+
+.sort-interestRate{
+    width: 93px;
+    left: 797px;
+}
+
+.credit_card_comparison_search{
+    margin-bottom: 10px;
+    /*background: #FFFFFF !important*/
+}
+
+.results-div{
+    border: 1px solid transparent;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+    position: relative;
+}
+
+/*.results-div:hover{
+    border: 1px solid #aaaaaa;
+    -webkit-box-shadow: 0px 0px 2px 1px #ccc;
+    -moz-box-shadow: 0px 0px 2px 1px #ccc;
+    box-shadow: 0px 0px 2px 1px #ccc;
+    background: #fcfcfc;
+}*/
+
+/*for load more button*/
+.load{
+    font-size: 1.3em;
+    text-decoration: none !important;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    color: #FFF !important;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100% !important;
+    max-width: 1018px;
+    border: 1px solid #666666 !important;
+    background: #40a944;
+    margin-bottom: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+    text-shadow: #dddddd 0 1px 0;
+}
+
+.load_more_show{
+    display: inline-block !important;
+}
+
+.load:hover{
+    background: #4cb451;
+}
+
+.chk_row_icon{
+    background: url(/assets/img/wright_icon.png) no-repeat left;
+    background-position: 0 0;
+    padding: 0 0 5px 30px;
+    color: #333;
+    line-height: 120%;
+    font-size: 12px;
+    display: block;
+}
+
+#results-found label{
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #2d762f !important;
+    font-style: italic;
+}
+
+.promo-bar{
+    margin-left: -16px
+}
+
+.floating-sort{
+  /*padding-top: 10px;*/
+  background: #ffffff !important
+}

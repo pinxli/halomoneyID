@@ -1,0 +1,126 @@
+                    <div class="row-fluid result">
+                        <div> <!-- RESULT 1 -->
+                            <div class="row-fluid results-div">
+                                <div class="span5">
+                                    <div class="row-fluid clearfix">
+                                        <div class="span5 resultsCellInner found_company">
+                                            <span class="my-count ng-binding"> {{productId}}</span>
+                                            <div class="logoAndIcons">
+                                                <img border="0" class="img_product" alt="{{logoAltText}}" data-legacy-src="{{logo}}" src="{{logo}}">
+                                                
+                                                <div>
+                                                    <abbr class="four_icons provider {{cardProvider}}" title="Provider: {{cardProvider}}"></abbr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="span7 resultsCellInner found_feature">
+                                            <div class="clearfix">
+                                                
+                                                <h2 class="ng-binding">{{bankName}} {{productName}}</h2>
+                                                <!-- {{#if bankName}} -->
+                                                <!-- {{/if}}
+                                                <h4 class="ng-binding">{{productName}}</h4> -->
+                                            </div>
+                                            <ul class="unstyled">
+                                                {{#keyBenefits}}
+                                                    {{#keyBenefit1}}
+                                                    <li><span class="chk_row_icon">{{keyBenefit1}}</span></li>
+                                                    {{/keyBenefit1}}
+                                                    {{#keyBenefit2}}
+                                                    <li><span class="chk_row_icon">{{keyBenefit2}}</span></li>
+                                                    {{/keyBenefit2}}
+                                                    {{#keyBenefit3}}
+                                                    <li><span class="chk_row_icon">{{keyBenefit3}}</span></li>
+                                                    {{/keyBenefit3}}
+                                                {{/keyBenefits}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="span7 other_dtl_cc">
+                                    <div class="row-fluid header_mob clearfix visible-phone">
+                                        <div data-legacy-class="{active: orderBy == 'lowestMonthlyFlatRate'}" class="span5 section_wid found_search_box found_balance target1 text-center">
+                                            <span style="white-space:nowrap;" data-legacy-class="{active: orderBy == 'lowestMonthlyFlatRate'}" data-legacy-click="changeOrder('lowestMonthlyFlatRate')" class="target">
+                                                Lowest Monthly Flat Rate&nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.lowestMonthlyFlatRate &amp;&amp; orderBy == 'lowestMonthlyFlatRate', 'icon-caret-down': refine.order.lowestMonthlyFlatRate &amp;&amp; orderBy == 'lowestMonthlyFlatRate'}"></span>
+                                            </span>
+                                            <!-- <span class="icon-caret-down" data-legacy-class="{icon-caret-down: !refine.order.rewards && orderBy == 'rewards', icon-caret-up: refine.order.rewards && orderBy == 'rewards'}" data-legacy-click="changeOrder('rewards')"></span> -->
+                                        </div>
+                                       
+                                        <!--
+                                        <div data-legacy-class="{active: orderBy == 'balance'}" class="span3 section_wid found_search_box found_balance two_lines target1">
+                                            <span data-legacy-class="{active: orderBy == 'balance'}" data-legacy-click="changeOrder('balance')" class="target">Balance <span style="white-space:nowrap;">Transfer&nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.balance &amp;&amp; orderBy == 'balance', 'icon-caret-down': refine.order.balance &amp;&amp; orderBy == 'balance'}"></span></span></span>
+                                            <!-- <span class="icon-caret-down" data-legacy-class="{icon-caret-down: !refine.order.balance && orderBy == 'balance', icon-caret-up: refine.order.balance && orderBy == 'balance'}" data-legacy-click="changeOrder('balance')"></span> -
+                                        </div> -->
+                                        
+                                        
+                                        
+                                        
+                                        <div data-legacy-class="{active: orderBy == 'lowestApr'}" class="span3 row_margin section_wid found_search_box target1">
+                                            <span data-legacy-class="{active: orderBy == 'lowestApr'}" data-legacy-click="changeOrder('lowestApr')" class="target">APR &nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.lowestApr &amp;&amp; orderBy == 'lowestApr', 'icon-caret-down': refine.order.lowestApr &amp;&amp; orderBy == 'lowestApr'}"></span></span></span>
+                                            <!-- <span class="icon-caret-down" data-legacy-class="{icon-caret-down: !refine.order.annual && orderBy == 'annual', icon-caret-up: refine.order.annual && orderBy == 'annual'}" data-legacy-click="changeOrder('annual')"></span> -->
+                                        </div>
+                                        <div data-legacy-class="{active: orderBy == 'annualFeePercent'}" class="span3 row_margin section_wid found_search_box found_last two_lines target1">
+                                            <span data-legacy-class="{active: orderBy == 'annualFeePercent'}" data-legacy-click="changeOrder('annualFeePercent')" class="target">Fees <span style="white-space:nowrap;">Rate&nbsp;<span data-legacy-class="{'icon-caret-up': !refine.order.annualFeePercent &amp;&amp; orderBy == 'annualFeePercent', 'icon-caret-down': refine.order.annualFeePercent &amp;&amp; orderBy == 'annualFeePercent'}"></span></span></span>
+                                            <!-- <span class="icon-caret-down" data-legacy-class="{icon-caret-down: !refine.order.interest && orderBy == 'interest', icon-caret-up: refine.order.interest && orderBy == 'interest'}" data-legacy-click="changeOrder('interest')"></span> -->
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="row-fluid clearfix">
+                                        <div id="pop1" role="dialog" tabindex="-1" class="span5 text-center text_lowestmonelyflatrate dtl fix_me">      
+                                                <li>
+                                                    <span class="icon-barcode"></span>
+                                                    <span class="txt">{{lowestMonthlyFlatRate}}% <?php echo lang('per month')?></span>
+                                                    <!-- {{loanTenure}} -->
+                                                </li>
+                                        </div>
+                                        
+                                        <div class="span2 text-center dtl apr">
+                                            <em ng-hide="!m.lowestApr || m.lowestApr == null || m.lowestApr == ''  || m.lowestApr == 'n.a. ' || m.lowestApr == 'n/a' || m.lowestApr == 'N/A'" class="ng-binding">{{lowestApr}}%
+                                            </em>
+                                        </div>
+                                        <div class="span2 text-center dtl fees">
+                                            {{#if modifiedAnnualFees}}
+                                                <em class="ng-binding"><?php echo lang('annual_fees')?>:</em>
+                                                <em class="ng-binding">{{modifiedAnnualFees}}</em>
+                                                <p class="py">&nbsp;</p>
+                                                <!-- <p class="py"><?php echo lang('per year')?></p> -->
+                                            {{/if}}
+
+                                            {{#if modifiedAnnualHandlingFees}}
+                                                <em class="ng-binding"><?php echo lang('handling_fees')?>:</em>
+                                                <em class="ng-binding">{{modifiedAnnualHandlingFees}}</em>
+                                                <p class="py">&nbsp;</p>
+                                                <!-- <p class="py"><?php echo lang('per year')?></p> -->
+                                            {{/if}}
+
+                                            {{#if modifiedEarlySettlementFees}}
+                                                <em class="ng-binding"><?php echo lang('early_settlement_fees')?>:</em>
+                                                <em class="ng-binding">{{modifiedEarlySettlementFees}}</em>
+                                                <p class="py">&nbsp;</p>
+                                                <!-- <p class="py"><?php echo lang('per year')?></p> -->
+                                            {{/if}}
+
+                                            {{#if modifiedLatePenaltyFees}}
+                                                <em class="ng-binding"><?php echo lang('late_payment_fees')?>:</em>
+                                                <em class="ng-binding">{{modifiedLatePenaltyFees}}</em>
+                                                <p class="py">&nbsp;</p>
+                                                <!-- <p class="py"><?php echo lang('per year')?></p> -->
+                                            {{/if}}
+
+                                        </div>
+                                        <div class="span3 text-center dtl_goto">
+                                            <div rel="nofollow" data-legacy-click="selectResult('application');$event.preventDefault();" style="width:90px;" class="btn-compare-now goto_site" data-id="{{productId}}" {{ (el) -> el.data('row-info', this) }}><?php echo lang('Apply Now')?></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> <!-- END RESULT 1 -->
+
+
+                        
+                </div>

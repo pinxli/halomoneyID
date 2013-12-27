@@ -1,0 +1,93 @@
+<div id="accordion_adv_options" class="accordion">
+    <div class="accordion-group">
+        <div style="display: none;" class="accordion-body" id="collapseOne">
+            <div class="accordion-inner">
+                <form class="ng-pristine ng-valid">
+                    <div class="row-fluid">
+
+                        <div style="border-right: #E6E6E6 solid 2px; padding: 0px 20px;" class="span6 space1 form-horizontal interested_in">
+                            <div class="clearfix">
+                                <br/>
+                                <div><?php echo lang('To help us find the best loan for you, please tell us what you need…')?></div> 
+                            </div>
+
+                            <div class="step3_types_filter control-group space1">
+                                <div class="step3_foreigner_filter control-group clearfix space1">
+                                    <div class="frm_label"><?php echo lang('How much would you like to borrow?')?></div>
+                                    <div class="controls controls-amount">
+                                        <input id="loan-amount" name="loanAmount" type="text" class="span2" value="1000">
+                                        <span class="currency-label"><?php echo lang('HK$')?></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step3_providers_filter" style="margin-bottom: 10px;">
+                                <div class="frm_label"><?php echo lang('Which Banks')?></div>
+                                <div class="btn-group controls">
+                                    <a class="btn combo dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="icon-usd pull-left"></span>
+                                        <span class="icon-caret-down pull-right"></span><?php echo lang('Select Banks')?>
+                                        {{#banksPickAll}}
+                                            (ALL)
+                                        {{/banksPickAll}}
+                                        {{#banksPick}}
+                                            ({{.}})
+                                        {{/banksPick}}
+                                    </a>
+                                      <ul class="dropdown-menu" style="overflow-y: scroll; max-height: 150px;">
+                                        {{#if banks}}
+                                        <li><a href="javascript:;" data-all="bankName-checkbox" class="checkall" class="select-all-filter"><?php echo lang('All Banks')?></a></li>
+                                        {{/if}}
+                                        
+                                        {{#banks}}
+                                        <li><input type="checkbox" name="bankName"  class="bankName-checkbox indivbank" value="{{.}}" />{{.}}</li>
+                                        {{/banks}}
+                                      </ul> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span6 space1">
+                            <br/><br/>
+                            <div class="step3_foreigner_filter control-group clearfix space1">
+                                <div class="frm_label"><?php echo lang('Over what period?')?></div>
+                                <div class="btn-group controls">
+                                    <span class="icon-calendar pull-left"></span>
+                                    <select id="loanTenure" name="loanTenure" class="combo btn ng-valid ng-dirty" data-ng-model="refine.values.loanTenure" data-ng-change="updateValues()" type="selectbox">
+                                        <option class="chev" value="null" selected=""><?php echo lang('Select Period')?></option>
+                                        <option class="chev" value="3"><?php echo lang('3 months')?></option>
+                                        <option class="chev" value="6"><?php echo lang('6 months')?></option>
+                                        <option class="chev" value="9"><?php echo lang('9 months')?></option>
+                                        <option class="chev" value="12"><?php echo lang('1 year')?></option>
+                                        <option class="chev" value="24"><?php echo lang('2 years')?></option>
+                                        <option class="chev" value="36"><?php echo lang('3 years')?></option>
+                                        <option class="chev" value="48"><?php echo lang('4 years+')?></option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="step3_types_filter control-group space1" style="height: auto ">
+                                <div class="frm_label frm_label_residence"><?php echo lang('Are you a permanent HK resident?')?></div><br class="visible-phone"/>
+                                <div class="controls controls-resident span12 ">
+                                    <label class="radio"><input class="aligned1" type="radio" value="" name="openToNonPermanentResidents"> <?php echo lang('Yes')?></label>
+                                    <label class="radio"><input class="aligned1" type="radio" value="true" name="openToNonPermanentResidents"> <?php echo lang('No')?></label>
+                                    <!-- <label class="radio"><input class="aligned1" type="radio" value="null" name="openToNonPermanentResidents" checked="checked"> Both</label> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="accordion-heading row text-center">
+            <div class="span5" id="filter"></div>
+            <div class="span2 text-center">
+                <a class="accordion-toggle adv_opt_pane"  href="">
+                    <span class="icon-chevron-sign-down icon-large"></span> {{filterBlockButton}}
+                </a> 
+            </div>
+            <div class="span3"></div>
+            {{#filterBlockIsOpen}}
+            <div class="span2 reset-filters-div"><a class="btn btn-link btn-small reset-filters"><?php echo lang('Reset Filters')?></a></div>
+            {{/filterBlockIsOpen}}
+        </div>
+    </div>
+</div>

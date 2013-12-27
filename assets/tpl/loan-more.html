@@ -1,0 +1,13 @@
+<div class="results-more">
+{{#more}}
+	{{>loan-row-tpl}}
+{{/more}}	
+<!-- {{^more}}
+	<p class="loading-next">Loading ...</p>	
+{{/more}} -->
+</div>
+<script type="text/javascript">
+	$('.load').remove();
+	//$('#results').append('<a class="load">Load more</a>');
+	$('#results').append('<a class="load" id="load-more"><?php echo lang('Show more Loan deals')?></a>');
+</script>
